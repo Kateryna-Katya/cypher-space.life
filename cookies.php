@@ -12,11 +12,11 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
 
 ?>
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $domainTitle ?> — Карьерный апгрейд и стратегии роста</title>
+    <title><?= $domainTitle ?> — Upgrade kariery i strategie wzrostu</title>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='4' y='18' width='6' height='10' rx='2' fill='%23ff2d55'/%3E%3Crect x='13' y='12' width='6' height='16' rx='2' fill='%23ff2d55'/%3E%3Cpath d='M22 4h6v6l-2-2-4 4-2-2 4-4-2-2z' fill='%23ff2d55'/%3E%3Crect x='22' y='14' width='6' height='14' rx='2' fill='%23ff2d55'/%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,87 +36,88 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
 
             <nav class="nav" id="menu">
                 <ul class="nav__list">
-                    <li><a href="./#hero" class="nav__link">Главная</a></li>
-                    <li><a href="./#strategy" class="nav__link">Стратегия</a></li>
-                    <li><a href="./#cases" class="nav__link">Кейсы</a></li>
-                    <li><a href="./#expertise" class="nav__link">Экспертиза</a></li>
-                    <li><a href="./#reviews" class="nav__link">Отзывы</a></li>
+                    <li><a href="./#hero" class="nav__link">Strona główna</a></li>
+                    <li><a href="./#strategy" class="nav__link">Strategia</a></li>
+                    <li><a href="./#cases" class="nav__link">Case studies</a></li>
+                    <li><a href="./#expertise" class="nav__link">Ekspertyza</a></li>
+                    <li><a href="./#reviews" class="nav__link">Opinie</a></li>
                 </ul>
             </nav>
 
             <a href="./#contact" class="btn-contact">
-                <span>Связаться</span>
+                <span>Kontakt</span>
                 <i class="fa-solid fa-arrow-right"></i>
             </a>
 
-            <button class="burger" id="burger" aria-label="Открыть меню">
+            <button class="burger" id="burger" aria-label="Otwórz menu">
                 <span></span>
                 <span></span>
             </button>
         </div>
     </header>
+
     <main class="legal-page">
     <section class="pages">
         <div class="container" data-aos="fade-up">
-            <span class="section-tag">Юридическая информация</span>
-            <h1>Политика использования файлов cookie</h1>
+            <span class="section-tag">Informacje prawne</span>
+            <h1>Polityka plików cookie</h1>
 
             <div class="legal-content">
                 <p class="lead-text">
-                    Добро пожаловать на <strong><?= $domainTitle ?></strong>! Чтобы улучшить ваш опыт
-                    взаимодействия с нашей платформой, обеспечить её стабильную работу и
-                    анализировать эффективность предложенных стратегий, мы используем файлы cookie.
+                    Witamy w <strong><?= $domainTitle ?></strong>! Aby poprawić Twoje doświadczenia
+                    podczas korzystania z naszej platformy, zapewnić jej stabilne działanie oraz
+                    analizować skuteczność proponowanych strategii, używamy plików cookie.
                 </p>
 
-                <h2>Что такое файлы cookie?</h2>
+                <h2>Czym są pliki cookie?</h2>
                 <p>
-                    Файл cookie — это небольшой текстовый файл, который веб-сайт сохраняет на вашем устройстве, когда вы его посещаете. Это позволяет платформе 
-                    <strong><?= $domainTitle ?></strong> "запоминать" ваши предпочтения 
-                    (например, выбор языка, настройки региона Франция и другие параметры) 
-                    для более персонализированного карьерного консультирования.
+                    Plik cookie to mały plik tekstowy, który strona internetowa zapisuje na Twoim urządzeniu podczas jej odwiedzania. Pozwala to platformie 
+                    <strong><?= $domainTitle ?></strong> „zapamiętać” Twoje preferencje 
+                    (na przykład wybór języka, ustawienia regionu Polska i inne parametry) 
+                    w celu zapewnienia bardziej spersonalizowanego doradztwa zawodowego.
                 </p>
 
-                <h2>Какие типы файлов cookie мы используем?</h2>
+                <h2>Jakich rodzajów plików cookie używamy?</h2>
                 <p>
-                    Мы классифицируем файлы cookie на сайте <strong><?= $fullDomain ?></strong> по следующим категориям:
+                    Klasyfikujemy pliki cookie na stronie <strong><?= $fullDomain ?></strong> w następujących kategoriach:
                 </p>
                 <ul class="legal-list">
                     <li>
-                        <strong>Строго необходимые:</strong> Обеспечивают базовые функции, такие как навигация по разделам <strong><?= $domainTitle ?></strong> и доступ к защищенным областям.
+                        <strong>Niezbędne:</strong> Zapewniają podstawowe funkcje, takie jak nawigacja po sekcjach <strong><?= $domainTitle ?></strong> oraz dostęp do bezpiecznych obszarów.
                     </li>
                     <li>
-                        <strong>Аналитические:</strong> Позволяют нам понять, как пользователи взаимодействуют с сайтом, чтобы мы могли оптимизировать наши карьерные инструменты.
+                        <strong>Analityczne:</strong> Pozwalają nam zrozumieć, w jaki sposób użytkownicy korzystają z serwisu, abyśmy mogli optymalizować nasze narzędzia kariery.
                     </li>
                     <li>
-                        <strong>Функциональные:</strong> Используются для запоминания ваших настроек, создавая индивидуальный опыт в рамках карьерного апгрейда.
+                        <strong>Funkcjonalne:</strong> Służą do zapamiętywania Twoich ustawień, tworząc indywidualne doświadczenie w ramach Twojego upgrade'u zawodowego.
                     </li>
                     <li>
-                        <strong>Маркетинговые:</strong> Помогают нам показывать релевантные предложения, соответствующие вашим профессиональным интересам в странах ЕС.
+                        <strong>Marketingowe:</strong> Pomagają nam wyświetlać odpowiednie oferty zgodne z Twoimi zainteresowaniami zawodowymi w krajach UE.
                     </li>
                 </ul>
 
-                <h2>Зачем мы их используем?</h2>
+                <h2>Dlaczego ich używamy?</h2>
                 <ul class="legal-list">
-                    <li>Обеспечение безопасности и защиты ваших данных.</li>
-                    <li>Анализ трафика для улучшения методологий роста.</li>
-                    <li>Персонализация контента для соискателей в Европе.</li>
-                    <li>Инновационная технология адаптации интерфейса под ваши нужды.</li>
+                    <li>Zapewnienie bezpieczeństwa i ochrony Twoich danych.</li>
+                    <li>Analiza ruchu w celu ulepszania metodologii wzrostu.</li>
+                    <li>Personalizacja treści dla kandydatów w Europie.</li>
+                    <li>Innowacyjna technologia adaptacji interfejsu do Twoich potrzeb.</li>
                 </ul>
 
-                <h2>Управление файлами cookie</h2>
+                <h2>Zarządzanie plikami cookie</h2>
                 <p>
-                    Вы можете управлять файлами cookie через настройки своего браузера (блокировать или удалять их). Обратите внимание, что ограничение cookie может повлиять на доступность некоторых функций платформы.
+                    Możesz zarządzać plikami cookie poprzez ustawienia swojej przeglądarki (blokować je lub usuwać). Pamiętaj, że ograniczenie plików cookie może wpłynąć na dostępność niektórych funkcji platformy.
                 </p>
 
                 <div class="contact-info-block">
-                    <h2>Контактная информация</h2>
+                    <h2>Informacje kontaktowe</h2>
                     <p>
-                        Если у вас есть вопросы по поводу использования технологий на <strong><?= $domainTitle ?></strong>:
+                        Jeśli masz pytania dotyczące wykorzystania technologii w <strong><?= $domainTitle ?></strong>:
                     </p>
                     <ul class="contact-data">
                         <li><strong>Email:</strong> <a href="mailto:support@<?= $fullDomain ?>">support@<?= $fullDomain ?></a></li>
-                        <li><strong>Телефон:</strong> <a href="tel:+33189480388">+33 1 89 48 03 88</a></li>
-                        <li><strong>Адрес:</strong> 14 Rue de Rivoli, 75004 Paris, France</li>
+                        <li><strong>Telefon:</strong> <a href="tel:+48221052857">+48 22 105 28 57</a></li>
+                        <li><strong>Adres:</strong> ul. Marszałkowska 126/134, 00-008 Warszawa, Polska</li>
                     </ul>
                 </div>
             </div>
@@ -133,22 +134,22 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
                     <span class="logo__text"><?= $domainTitle ?></span>
                 </a>
                 <p class="footer__description">
-                    Инновационные стратегии для построения карьеры, которая работает на вас. Переосмыслите свой путь вместе с экспертами <?= $domainTitle ?>.
+                    Innowacyjne strategie budowania kariery, która pracuje dla Ciebie. Przebuduj swoją ścieżkę razem z ekspertami <?= $domainTitle ?>.
                 </p>
             </div>
 
             <div class="footer__col">
-                <h4 class="footer__title">Навигация</h4>
+                <h4 class="footer__title">Nawigacja</h4>
                 <ul class="footer__links">
-                    <li><a href="./#hero">Главная</a></li>
-                    <li><a href="./#strategy">Стратегия</a></li>
-                    <li><a href="./#cases">Кейсы</a></li>
-                    <li><a href="./#expertise">Экспертиза</a></li>
+                    <li><a href="./#hero">Strona główna</a></li>
+                    <li><a href="./#strategy">Strategia</a></li>
+                    <li><a href="./#cases">Case studies</a></li>
+                    <li><a href="./#expertise">Ekspertyza</a></li>
                 </ul>
             </div>
 
             <div class="footer__col">
-                <h4 class="footer__title">Юридическая информация</h4>
+                <h4 class="footer__title">Informacje prawne</h4>
                 <ul class="footer__links">
                     <li><a href="./privacy.php">Privacy Policy</a></li>
                     <li><a href="./cookies.php">Cookie Policy</a></li>
@@ -161,11 +162,11 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
             </div>
 
             <div class="footer__col">
-                <h4 class="footer__title">Контакты</h4>
+                <h4 class="footer__title">Kontakt</h4>
                 <ul class="footer__contacts">
                     <li>
                         <i class="fa-solid fa-phone"></i>
-                        <a href="tel:+33189480388">+33 1 89 48 03 88</a>
+                        <a href="tel:+48221052857">+48 22 105 28 57</a>
                     </li>
                     <li>
                         <i class="fa-solid fa-envelope"></i>
@@ -173,7 +174,7 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
                     </li>
                     <li>
                         <i class="fa-solid fa-location-dot"></i>
-                        <span>14 Rue de Rivoli, 75004 Paris, France</span>
+                        <span>ul. Marszałkowska 126/134, Warszawa, Polska</span>
                     </li>
                 </ul>
             </div>
@@ -181,26 +182,26 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
         
         <div class="container">
             <div class="footer__bottom">
-                <p>&copy; <?= date('Y') ?> <?= $domainTitle ?>. Платформа доступна в Европе.</p>
+                <p>&copy; <?= date('Y') ?> <?= $domainTitle ?>. Platforma dostępna w Europie.</p>
             </div>
         </div>
     </footer>
     <div class="mobile-menu" id="mobile-menu">
         <button class="mobile-menu__close" id="menu-close">&times;</button>
         <nav class="mobile-menu__nav">
-            <a href="./#hero" class="mobile-menu__link">Главная</a>
-            <a href="./#strategy" class="mobile-menu__link">Стратегия</a>
-            <a href="./#cases" class="mobile-menu__link">Кейсы</a>
-            <a href="./#expertise" class="mobile-menu__link">Экспертиза</a>
-            <a href="./#reviews" class="mobile-menu__link">Отзывы</a>
-            <a href="./#contact" class="btn-primary">Бесплатная консультация</a>
+            <a href="./#hero" class="mobile-menu__link">Strona główna</a>
+            <a href="./#strategy" class="mobile-menu__link">Strategia</a>
+            <a href="./#cases" class="mobile-menu__link">Case studies</a>
+            <a href="./#expertise" class="mobile-menu__link">Ekspertyza</a>
+            <a href="./#reviews" class="mobile-menu__link">Opinie</a>
+            <a href="./#contact" class="btn-primary">Bezpłatna konsultacja</a>
         </nav>
     </div>
     
     <div class="cookie-popup" id="cookie-popup">
         <div class="cookie-popup__content">
-            <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.php">Cookie политике</a>.</p>
-            <button class="btn-primary btn-primary--small" id="cookie-accept">Принять</button>
+            <p>Ta strona używa plików cookies w celu poprawy działania. Dowiedz się więcej w naszej <a href="./cookies.php">Polityce plików cookie</a>.</p>
+            <button class="btn-primary btn-primary--small" id="cookie-accept">Akceptuję</button>
         </div>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

@@ -12,11 +12,11 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
 
 ?>
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $domainTitle ?> — Карьерный апгрейд и стратегии роста</title>
+    <title><?= $domainTitle ?> — Upgrade kariery i strategie wzrostu</title>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='4' y='18' width='6' height='10' rx='2' fill='%23ff2d55'/%3E%3Crect x='13' y='12' width='6' height='16' rx='2' fill='%23ff2d55'/%3E%3Cpath d='M22 4h6v6l-2-2-4 4-2-2 4-4-2-2z' fill='%23ff2d55'/%3E%3Crect x='22' y='14' width='6' height='14' rx='2' fill='%23ff2d55'/%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,113 +36,114 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
 
             <nav class="nav" id="menu">
                 <ul class="nav__list">
-                    <li><a href="./#hero" class="nav__link">Главная</a></li>
-                    <li><a href="./#strategy" class="nav__link">Стратегия</a></li>
-                    <li><a href="./#cases" class="nav__link">Кейсы</a></li>
-                    <li><a href="./#expertise" class="nav__link">Экспертиза</a></li>
-                    <li><a href="./#reviews" class="nav__link">Отзывы</a></li>
+                    <li><a href="./#hero" class="nav__link">Strona główna</a></li>
+                    <li><a href="./#strategy" class="nav__link">Strategia</a></li>
+                    <li><a href="./#cases" class="nav__link">Case studies</a></li>
+                    <li><a href="./#expertise" class="nav__link">Ekspertyza</a></li>
+                    <li><a href="./#reviews" class="nav__link">Opinie</a></li>
                 </ul>
             </nav>
 
             <a href="./#contact" class="btn-contact">
-                <span>Связаться</span>
+                <span>Kontakt</span>
                 <i class="fa-solid fa-arrow-right"></i>
             </a>
 
-            <button class="burger" id="burger" aria-label="Открыть меню">
+            <button class="burger" id="burger" aria-label="Otwórz menu">
                 <span></span>
                 <span></span>
             </button>
         </div>
     </header>
+
     <main class="legal-page">
     <section class="pages">
         <div class="container" data-aos="fade-up">
             <span class="section-tag">Privacy & Security</span>
-            <h1>Политика обработки персональных данных</h1>
+            <h1>Polityka przetwarzania danych osobowych</h1>
 
             <div class="legal-content">
                 <div class="policy-intro" data-aos="fade-up" data-aos-delay="100">
-                    <h2>1. Общие положения</h2>
+                    <h2>1. Postanowienia ogólne</h2>
                     <p>
-                        Настоящая политика (далее — «Политика») определяет порядок и условия обработки персональных
-                        данных, предпринимаемые платформой <strong><?= $domainTitle ?></strong> (далее — «Оператор»), 
-                        в соответствии с требованиями GDPR и законодательства Франции.
+                        Niniejsza polityka (dalej — „Polityka”) określa zasady i warunki przetwarzania danych osobowych 
+                        przez platformę <strong><?= $domainTitle ?></strong> (dalej — „Administrator”), 
+                        zgodnie z wymogami RODO (GDPR) oraz obowiązującymi przepisami prawa polskiego.
                     </p>
                     <p>
-                        1.1. Важнейшей целью Оператора является защита прав и свобод Пользователей при
-                        обработке их персональных данных, включая защиту права на неприкосновенность частной жизни и профессиональную тайну.
+                        1.1. Nadrzędnym celem Administratora jest ochrona praw i wolności Użytkowników podczas 
+                        przetwarzania ich danych osobowych, w tym ochrona prawa do prywatności oraz tajemnicy zawodowej.
                     </p>
                     <p>
-                        1.2. Настоящая Политика применяется ко всей информации, которую
-                        Оператор может получить о посетителях веб-сайта <strong><?= $fullDomain ?></strong>.
+                        1.2. Niniejsza Polityka dotyczy wszystkich informacji, jakie Administrator może uzyskać 
+                        o osobach odwiedzających stronę internetową <strong><?= $fullDomain ?></strong>.
                     </p>
                 </div>
 
                 <div class="policy-section" data-aos="fade-up" data-aos-delay="200">
-                    <h2>2. Основные понятия</h2>
+                    <h2>2. Podstawowe pojęcia</h2>
                     <ul class="terminology-list">
                         <li>
-                            <strong>Веб-сайт</strong> — совокупность графических и
-                            информационных материалов <strong><?= $fullDomain ?></strong>.
+                            <strong>Strona internetowa</strong> — zbiór materiałów graficznych i 
+                            informacyjnych serwisu <strong><?= $fullDomain ?></strong>.
                         </li>
-                        <li><strong>Пользователь</strong> — любой посетитель веб-сайта.</li>
+                        <li><strong>Użytkownik</strong> — każda osoba odwiedzająca stronę internetową.</li>
                         <li>
-                            <strong>Персональные данные</strong> — любая информация,
-                            относящаяся прямо или косвенно к Пользователю, стремящемуся к карьерному апгрейду.
+                            <strong>Dane osobowe</strong> — wszelkie informacje odnoszące się bezpośrednio lub 
+                            pośrednio do Użytkownika dążącego do upgrade'u swojej kariery.
                         </li>
                     </ul>
                 </div>
 
                 <div class="policy-section" data-aos="fade-up" data-aos-delay="300">
-                    <h2>3. Данные, которые мы обрабатываем</h2>
+                    <h2>3. Dane, które przetwarzamy</h2>
                     <div class="data-grid">
                         <div class="data-item">
                             <i class="fas fa-user-shield"></i>
                             <div>
-                                <strong>Идентификационные данные:</strong>
-                                <span>Имя, адрес электронной почты, номер телефона.</span>
+                                <strong>Dane identyfikacyjne:</strong>
+                                <span>Imię, adres e-mail, numer telefonu.</span>
                             </div>
                         </div>
                         <div class="data-item">
                             <i class="fas fa-cookie-bite"></i>
                             <div>
-                                <strong>Технические данные:</strong>
-                                <span>Cookies, IP-адрес, тип браузера и данные об активности в Европе.</span>
+                                <strong>Dane techniczne:</strong>
+                                <span>Pliki cookies, adres IP, typ przeglądarki oraz dane o aktywności w regionie UE.</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="policy-section" data-aos="fade-up" data-aos-delay="400">
-                    <h2>4. Цели обработки данных</h2>
-                    <p>Мы используем ваши данные для того, чтобы предоставлять решения, которые меняют правила игры:</p>
+                    <h2>4. Cele przetwarzania danych</h2>
+                    <p>Wykorzystujemy Twoje dane, aby dostarczać rozwiązania zmieniające zasady gry:</p>
                     <ul class="legal-list">
-                        <li>Идентификация Пользователя для персонализации стратегий роста.</li>
-                        <li>Установление обратной связи и обработка заявок на консультации.</li>
-                        <li>Предоставление экспертной поддержки на всех этапах карьеры.</li>
-                        <li>Улучшение качества работы платформы и контента блога.</li>
+                        <li>Identyfikacja Użytkownika w celu personalizacji strategii wzrostu.</li>
+                        <li>Nawiązywanie kontaktu oraz obsługa zgłoszeń na konsultacje.</li>
+                        <li>Zapewnienie wsparcia eksperckiego na wszystkich etapach ścieżki zawodowej.</li>
+                        <li>Poprawa jakości działania platformy oraz treści edukacyjnych.</li>
                     </ul>
                 </div>
 
                 <div class="policy-section" data-aos="fade-up" data-aos-delay="500">
-                    <h2>5. Правовые основания</h2>
+                    <h2>5. Podstawy prawne</h2>
                     <p>
-                        Оператор обрабатывает персональные данные только в случае их заполнения Пользователем через специальные формы на сайте 
-                        <strong><?= $fullDomain ?></strong>. Используя наши сервисы, вы выражаете свое согласие с данной Политикой.
+                        Administrator przetwarza dane osobowe tylko w przypadku ich dobrowolnego podania przez Użytkownika 
+                        poprzez specjalne formularze na stronie <strong><?= $fullDomain ?></strong>. Korzystając z naszych usług, 
+                        wyrażasz zgodę na niniejszą Politykę.
                     </p>
                 </div>
 
                 <div class="policy-section contact-footer-policy" data-aos="fade-up" data-aos-delay="600">
-                    <h2>6. Вопросы и отзывы</h2>
-                    <p>По любым вопросам касательно защиты ваших данных в Париже, вы можете направить письмо на адрес:</p>
+                    <h2>6. Pytania i kontakt</h2>
+                    <p>W przypadku jakichkolwiek pytań dotyczących ochrony Twoich danych w Warszawie, prosimy o kontakt pod adresem:</p>
                     <a href="mailto:support@<?= $fullDomain ?>" class="policy-mail">support@<?= $fullDomain ?></a>
                 </div>
             </div>
         </div>
     </section>
 </main>
-
 
     <footer class="footer">
         <div class="container footer__container">
@@ -152,22 +153,22 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
                     <span class="logo__text"><?= $domainTitle ?></span>
                 </a>
                 <p class="footer__description">
-                    Инновационные стратегии для построения карьеры, которая работает на вас. Переосмыслите свой путь вместе с экспертами <?= $domainTitle ?>.
+                    Innowacyjne strategie budowania kariery, która pracuje dla Ciebie. Przebuduj swoją ścieżkę razem z ekspertami <?= $domainTitle ?>.
                 </p>
             </div>
 
             <div class="footer__col">
-                <h4 class="footer__title">Навигация</h4>
+                <h4 class="footer__title">Nawigacja</h4>
                 <ul class="footer__links">
-                    <li><a href="./#hero">Главная</a></li>
-                    <li><a href="./#strategy">Стратегия</a></li>
-                    <li><a href="./#cases">Кейсы</a></li>
-                    <li><a href="./#expertise">Экспертиза</a></li>
+                    <li><a href="./#hero">Strona główna</a></li>
+                    <li><a href="./#strategy">Strategia</a></li>
+                    <li><a href="./#cases">Case studies</a></li>
+                    <li><a href="./#expertise">Ekspertyza</a></li>
                 </ul>
             </div>
 
             <div class="footer__col">
-                <h4 class="footer__title">Юридическая информация</h4>
+                <h4 class="footer__title">Informacje prawne</h4>
                 <ul class="footer__links">
                     <li><a href="./privacy.php">Privacy Policy</a></li>
                     <li><a href="./cookies.php">Cookie Policy</a></li>
@@ -180,11 +181,11 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
             </div>
 
             <div class="footer__col">
-                <h4 class="footer__title">Контакты</h4>
+                <h4 class="footer__title">Kontakt</h4>
                 <ul class="footer__contacts">
                     <li>
                         <i class="fa-solid fa-phone"></i>
-                        <a href="tel:+33189480388">+33 1 89 48 03 88</a>
+                        <a href="tel:+48221052857">+48 22 105 28 57</a>
                     </li>
                     <li>
                         <i class="fa-solid fa-envelope"></i>
@@ -192,7 +193,7 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
                     </li>
                     <li>
                         <i class="fa-solid fa-location-dot"></i>
-                        <span>14 Rue de Rivoli, 75004 Paris, France</span>
+                        <span>ul. Marszałkowska 126/134, 00-008 Warszawa, Polska</span>
                     </li>
                 </ul>
             </div>
@@ -200,26 +201,27 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
         
         <div class="container">
             <div class="footer__bottom">
-                <p>&copy; <?= date('Y') ?> <?= $domainTitle ?>. Платформа доступна в Европе.</p>
+                <p>&copy; <?= date('Y') ?> <?= $domainTitle ?>. Platforma dostępna w Europie.</p>
             </div>
         </div>
     </footer>
+
     <div class="mobile-menu" id="mobile-menu">
         <button class="mobile-menu__close" id="menu-close">&times;</button>
         <nav class="mobile-menu__nav">
-            <a href="./#hero" class="mobile-menu__link">Главная</a>
-            <a href="./#strategy" class="mobile-menu__link">Стратегия</a>
-            <a href="./#cases" class="mobile-menu__link">Кейсы</a>
-            <a href="./#expertise" class="mobile-menu__link">Экспертиза</a>
-            <a href="./#reviews" class="mobile-menu__link">Отзывы</a>
-            <a href="./#contact" class="btn-primary">Бесплатная консультация</a>
+            <a href="./#hero" class="mobile-menu__link">Strona główna</a>
+            <a href="./#strategy" class="mobile-menu__link">Strategia</a>
+            <a href="./#cases" class="mobile-menu__link">Case studies</a>
+            <a href="./#expertise" class="mobile-menu__link">Ekspertyza</a>
+            <a href="./#reviews" class="mobile-menu__link">Opinie</a>
+            <a href="./#contact" class="btn-primary">Bezpłatna konsultacja</a>
         </nav>
     </div>
     
     <div class="cookie-popup" id="cookie-popup">
         <div class="cookie-popup__content">
-            <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.php">Cookie политике</a>.</p>
-            <button class="btn-primary btn-primary--small" id="cookie-accept">Принять</button>
+            <p>Ta strona używa plików cookies w celu poprawy działania. Dowiedz się więcej w naszej <a href="./cookies.php">Polityce Cookies</a>.</p>
+            <button class="btn-primary btn-primary--small" id="cookie-accept">Akceptuję</button>
         </div>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

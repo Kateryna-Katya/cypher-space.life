@@ -12,11 +12,11 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
 
 ?>
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $domainTitle ?> — Карьерный апгрейд и стратегии роста</title>
+    <title><?= $domainTitle ?> — Upgrade kariery i strategie wzrostu</title>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='4' y='18' width='6' height='10' rx='2' fill='%23ff2d55'/%3E%3Crect x='13' y='12' width='6' height='16' rx='2' fill='%23ff2d55'/%3E%3Cpath d='M22 4h6v6l-2-2-4 4-2-2 4-4-2-2z' fill='%23ff2d55'/%3E%3Crect x='22' y='14' width='6' height='14' rx='2' fill='%23ff2d55'/%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,100 +36,100 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
 
             <nav class="nav" id="menu">
                 <ul class="nav__list">
-                    <li><a href="./#hero" class="nav__link">Главная</a></li>
-                    <li><a href="./#strategy" class="nav__link">Стратегия</a></li>
-                    <li><a href="./#cases" class="nav__link">Кейсы</a></li>
-                    <li><a href="./#expertise" class="nav__link">Экспертиза</a></li>
-                    <li><a href="./#reviews" class="nav__link">Отзывы</a></li>
+                    <li><a href="./#hero" class="nav__link">Strona główna</a></li>
+                    <li><a href="./#strategy" class="nav__link">Strategia</a></li>
+                    <li><a href="./#cases" class="nav__link">Case studies</a></li>
+                    <li><a href="./#expertise" class="nav__link">Ekspertyza</a></li>
+                    <li><a href="./#reviews" class="nav__link">Opinie</a></li>
                 </ul>
             </nav>
 
             <a href="./#contact" class="btn-contact">
-                <span>Связаться</span>
+                <span>Kontakt</span>
                 <i class="fa-solid fa-arrow-right"></i>
             </a>
 
-            <button class="burger" id="burger" aria-label="Открыть меню">
+            <button class="burger" id="burger" aria-label="Otwórz menu">
                 <span></span>
                 <span></span>
             </button>
         </div>
     </header>
+
     <main class="legal-page">
     <section class="pages">
         <div class="container" data-aos="fade-up">
             <span class="section-tag">Payment & Refunds</span>
-            <h1>Политика возврата средств</h1>
+            <h1>Polityka zwrotów</h1>
             
             <div class="legal-content">
                 <div class="policy-hero-card refund-accent" data-aos="fade-up">
                     <p>
-                        Мы стремимся к максимальной прозрачности и ценим ваше доверие. 
-                        В <strong><?= $domainTitle ?></strong> предусмотрена гибкая процедура возврата, 
-                        которая защищает ваши инвестиции в профессиональный рост и соответствует законодательству Франции.
+                        Dążymy do maksymalnej przejrzystości i cenimy Twoje zaufanie. 
+                        W <strong><?= $domainTitle ?></strong> przewidziano elastyczną procedurę zwrotu, 
+                        która chroni Twoje inwestycje w rozwój zawodowy i jest zgodna z przepisami obowiązującymi w Polsce i UE.
                     </p>
                 </div>
 
-                <h2 data-aos="fade-up">Условия для оформления возврата</h2>
+                <h2 data-aos="fade-up">Warunki otrzymania zwrotu</h2>
                 <div class="refund-grid">
                     <div class="refund-card" data-aos="zoom-in" data-aos-delay="100">
                         <i class="fas fa-file-contract"></i>
-                        <h3>Несоответствие стратегии</h3>
-                        <p>Если содержание консультаций или материалов существенно отличается от заявленного на <strong><?= $domainTitle ?></strong>.</p>
+                        <h3>Niezgodność ze strategią</h3>
+                        <p>Jeśli treść konsultacji lub materiałów istotnie odbiega od opisu przedstawionego na platformie <strong><?= $domainTitle ?></strong>.</p>
                     </div>
                     <div class="refund-card" data-aos="zoom-in" data-aos-delay="200">
                         <i class="fas fa-tools"></i>
-                        <h3>Технические преграды</h3>
-                        <p>Критические ошибки платформы <strong><?= $fullDomain ?></strong>, препятствующие получению услуг, не устраненные в срок.</p>
+                        <h3>Bariery techniczne</h3>
+                        <p>Krytyczne błędy platformy <strong><?= $fullDomain ?></strong> uniemożliwiające korzystanie z usług, które nie zostały naprawione w terminie.</p>
                     </div>
                     <div class="refund-card" data-aos="zoom-in" data-aos-delay="300">
                         <i class="fas fa-hourglass-half"></i>
-                        <h3>Период охлаждения</h3>
-                        <p>Возможность отмены заказа в течение 14 дней с момента оплаты, если работа над вашим кейсом еще не была начата.</p>
+                        <h3>Prawo do odstąpienia</h3>
+                        <p>Możliwość anulowania zamówienia w ciągu 14 dni od momentu płatności, o ile praca nad Twoim przypadkiem nie została jeszcze rozpoczęta.</p>
                     </div>
                 </div>
 
                 <div class="procedure-block" data-aos="fade-up">
-                    <h2>Процедура запроса на возврат</h2>
-                    <p>Чтобы инициировать возврат на платформе <strong><?= $domainTitle ?></strong>, выполните следующие шаги:</p>
+                    <h2>Procedura ubiegania się o zwrot</h2>
+                    <p>Aby zainicjować proces zwrotu na platformie <strong><?= $domainTitle ?></strong>, wykonaj następujące kroki:</p>
                     <div class="steps-mini">
-                        <div class="step-mini"><span>1</span> Отправьте запрос на <a href="mailto:support@<?= $fullDomain ?>">support@<?= $fullDomain ?></a></div>
-                        <div class="step-mini"><span>2</span> Укажите тему: «Запрос на возврат средств»</div>
-                        <div class="step-mini"><span>3</span> Данные: Ваше имя, Email и дата транзакции</div>
-                        <div class="step-mini"><span>4</span> Кратко опишите причину вашего решения</div>
+                        <div class="step-mini"><span>1</span> Wyślij zgłoszenie na adres <a href="mailto:support@<?= $fullDomain ?>">support@<?= $fullDomain ?></a></div>
+                        <div class="step-mini"><span>2</span> Wpisz temat: „Wniosek o zwrot środków”</div>
+                        <div class="step-mini"><span>3</span> Podaj dane: Imię, adres e-mail oraz datę transakcji</div>
+                        <div class="step-mini"><span>4</span> Krótko opisz powód swojej decyzji</div>
                     </div>
                 </div>
 
-                <h2 data-aos="fade-up">Сроки и способ возврата</h2>
+                <h2 data-aos="fade-up">Terminy i sposób zwrotu</h2>
                 <p data-aos="fade-up">
-                    После одобрения заявки возврат денежных средств будет произведен в течение <strong>7–14 рабочих дней</strong>. 
-                    Средства переводятся тем же способом, которым была совершена оплата. 
-                    Фактический срок зачисления зависит от регламента вашего банка во <strong>Франции</strong> или стране вашего пребывания.
+                    Po zatwierdzeniu wniosku, zwrot środków zostanie zrealizowany w ciągu <strong>7–14 dni roboczych</strong>. 
+                    Środki są zwracane tą samą metodą, którą dokonano płatności. 
+                    Faktyczny czas księgowania zależy od regulaminu Twojego banku w <strong>Polsce</strong> lub kraju Twojego pobytu.
                 </p>
 
                 <div class="warning-block" data-aos="fade-up">
-                    <h2>Исключения и ограничения</h2>
+                    <h2>Wyjątki i ograniczenia</h2>
                     <ul class="legal-list">
-                        <li>Услуга уже была полностью оказана (проведена индивидуальная консультация).</li>
-                        <li>Запрос подан по истечении 14 календарных дней с момента совершения покупки.</li>
-                        <li>Вы получили доступ к уникальным авторским методологиям и материалам более чем на 50%.</li>
-                        <li>Нарушение правил взаимодействия с экспертами <strong><?= $domainTitle ?></strong>.</li>
+                        <li>Usługa została już w pełni wykonana (np. odbyła się indywidualna konsultacja).</li>
+                        <li>Wniosek został złożony po upływie 14 dni kalendarzowych od momentu zakupu.</li>
+                        <li>Uzyskałeś dostęp do ponad 50% unikalnych autorskich metodologii i materiałów.</li>
+                        <li>Naruszenie zasad współpracy z ekspertami <strong><?= $domainTitle ?></strong>.</li>
                     </ul>
                 </div>
 
                 <div class="contact-footer-policy" data-aos="zoom-in">
-                    <h2>Остались вопросы?</h2>
-                    <p>Наша служба поддержки готова помочь вам разобраться в деталях:</p>
+                    <h2>Masz pytania?</h2>
+                    <p>Nasz zespół wsparcia jest gotowy, aby pomóc Ci zrozumieć szczegóły:</p>
                     <div class="policy-contacts-row">
                         <a href="mailto:support@<?= $fullDomain ?>" class="policy-mail">support@<?= $fullDomain ?></a>
-                        <a href="tel:+33189480388" class="policy-phone">+33 1 89 48 03 88</a>
+                        <a href="tel:+48221052857" class="policy-phone">+48 22 105 28 57</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 </main>
-
 
     <footer class="footer">
         <div class="container footer__container">
@@ -139,22 +139,22 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
                     <span class="logo__text"><?= $domainTitle ?></span>
                 </a>
                 <p class="footer__description">
-                    Инновационные стратегии для построения карьеры, которая работает на вас. Переосмыслите свой путь вместе с экспертами <?= $domainTitle ?>.
+                    Innowacyjne strategie budowania kariery, która pracuje dla Ciebie. Przebuduj swoją ścieżkę razem z ekspertami <?= $domainTitle ?>.
                 </p>
             </div>
 
             <div class="footer__col">
-                <h4 class="footer__title">Навигация</h4>
+                <h4 class="footer__title">Nawigacja</h4>
                 <ul class="footer__links">
-                    <li><a href="./#hero">Главная</a></li>
-                    <li><a href="./#strategy">Стратегия</a></li>
-                    <li><a href="./#cases">Кейсы</a></li>
-                    <li><a href="./#expertise">Экспертиза</a></li>
+                    <li><a href="./#hero">Strona główna</a></li>
+                    <li><a href="./#strategy">Strategia</a></li>
+                    <li><a href="./#cases">Case studies</a></li>
+                    <li><a href="./#expertise">Ekspertyza</a></li>
                 </ul>
             </div>
 
             <div class="footer__col">
-                <h4 class="footer__title">Юридическая информация</h4>
+                <h4 class="footer__title">Informacje prawne</h4>
                 <ul class="footer__links">
                     <li><a href="./privacy.php">Privacy Policy</a></li>
                     <li><a href="./cookies.php">Cookie Policy</a></li>
@@ -167,11 +167,11 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
             </div>
 
             <div class="footer__col">
-                <h4 class="footer__title">Контакты</h4>
+                <h4 class="footer__title">Kontakt</h4>
                 <ul class="footer__contacts">
                     <li>
                         <i class="fa-solid fa-phone"></i>
-                        <a href="tel:+33189480388">+33 1 89 48 03 88</a>
+                        <a href="tel:+48221052857">+48 22 105 28 57</a>
                     </li>
                     <li>
                         <i class="fa-solid fa-envelope"></i>
@@ -179,7 +179,7 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
                     </li>
                     <li>
                         <i class="fa-solid fa-location-dot"></i>
-                        <span>14 Rue de Rivoli, 75004 Paris, France</span>
+                        <span>ul. Marszałkowska 126/134, 00-008 Warszawa, Polska</span>
                     </li>
                 </ul>
             </div>
@@ -187,28 +187,30 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
         
         <div class="container">
             <div class="footer__bottom">
-                <p>&copy; <?= date('Y') ?> <?= $domainTitle ?>. Платформа доступна в Европе.</p>
+                <p>&copy; <?= date('Y') ?> <?= $domainTitle ?>. Platforma dostępna w Europie.</p>
             </div>
         </div>
     </footer>
+
     <div class="mobile-menu" id="mobile-menu">
         <button class="mobile-menu__close" id="menu-close">&times;</button>
         <nav class="mobile-menu__nav">
-            <a href="./#hero" class="mobile-menu__link">Главная</a>
-            <a href="./#strategy" class="mobile-menu__link">Стратегия</a>
-            <a href="./#cases" class="mobile-menu__link">Кейсы</a>
-            <a href="./#expertise" class="mobile-menu__link">Экспертиза</a>
-            <a href="./#reviews" class="mobile-menu__link">Отзывы</a>
-            <a href="./#contact" class="btn-primary">Бесплатная консультация</a>
+            <a href="./#hero" class="mobile-menu__link">Strona główna</a>
+            <a href="./#strategy" class="mobile-menu__link">Strategia</a>
+            <a href="./#cases" class="mobile-menu__link">Case studies</a>
+            <a href="./#expertise" class="mobile-menu__link">Ekspertyza</a>
+            <a href="./#reviews" class="mobile-menu__link">Opinie</a>
+            <a href="./#contact" class="btn-primary">Bezpłatna konsultacja</a>
         </nav>
     </div>
     
     <div class="cookie-popup" id="cookie-popup">
         <div class="cookie-popup__content">
-            <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.php">Cookie политике</a>.</p>
-            <button class="btn-primary btn-primary--small" id="cookie-accept">Принять</button>
+            <p>Ta strona używa plików cookies w celu poprawy działania. Więcej szczegółów w naszej <a href="./cookies.php">Polityce Cookies</a>.</p>
+            <button class="btn-primary btn-primary--small" id="cookie-accept">Akceptuję</button>
         </div>
     </div>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({

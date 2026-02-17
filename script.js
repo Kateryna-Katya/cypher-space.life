@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     
-    // --- 1. ПЛАВНЫЙ СКРОЛЛ ХЕДЕРА ---
+    // --- 1. PŁYNNY SKROLL NAGŁÓWKA ---
     const header = document.querySelector('.header');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // --- 2. МОБИЛЬНОЕ МЕНЮ ---
+    // --- 2. MENU MOBILNE ---
     const burger = document.getElementById('burger');
     const menuClose = document.getElementById('menu-close');
     const mobileMenu = document.getElementById('mobile-menu');
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         link.addEventListener('click', () => mobileMenu.classList.remove('active'));
     });
 
-    // --- 3. TILT EFFECT ДЛЯ КЕЙСОВ ---
+    // --- 3. EFEKT TILT DLA KART (CASE STUDIES) ---
     const cards = document.querySelectorAll('.case-card__inner');
     cards.forEach(card => {
         card.addEventListener('mousemove', (e) => {
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- 4. АНИМАЦИЯ СЧЕТЧИКОВ ---
+    // --- 4. ANIMACJA LICZNIKÓW ---
     const stats = document.querySelectorAll('.stat-item__num');
     const countUp = (el) => {
         const target = +el.getAttribute('data-target');
@@ -71,10 +71,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { threshold: 0.5 });
     stats.forEach(stat => observer.observe(stat));
 
-    // --- 5. ФОРМА КОНТАКТОВ + КАПЧА ---
+    // --- 5. FORMULARZ KONTAKTOWY + CAPTCHA ---
     const phoneInput = document.getElementById('phone-input');
     if (phoneInput) {
         phoneInput.addEventListener('input', (e) => {
+            // Zezwalamy tylko na cyfry
             e.target.value = e.target.value.replace(/[^0-9]/g, '');
         });
     }
@@ -94,22 +95,26 @@ document.addEventListener('DOMContentLoaded', () => {
             const userAnswer = document.getElementById('captcha-answer').value;
             
             if (parseInt(userAnswer) !== correctAnswer) {
-                alert('Ошибка в примере! Попробуйте еще раз.');
+                alert('Błąd w obliczeniach! Spróbuj ponownie.');
                 return;
             }
 
             const btn = form.querySelector('.form__btn');
-            btn.innerText = 'Отправка...';
+            const originalBtnText = btn.innerText;
+            btn.innerText = 'Wysyłanie...';
             btn.disabled = true;
 
+            // Symulacja wysyłania
             setTimeout(() => {
                 successMsg.style.display = 'flex';
                 form.reset();
+                btn.innerText = originalBtnText;
+                btn.disabled = false;
             }, 1500);
         });
     }
 
-    // --- 6. COOKIE POPUP ---
+    // --- 6. POPUP COOKIE ---
     const cookiePopup = document.getElementById('cookie-popup');
     const cookieAccept = document.getElementById('cookie-accept');
 

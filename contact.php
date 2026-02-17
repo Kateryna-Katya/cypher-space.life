@@ -12,11 +12,11 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
 
 ?>
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $domainTitle ?> — Карьерный апгрейд и стратегии роста</title>
+    <title><?= $domainTitle ?> — Upgrade kariery i strategie wzrostu</title>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='4' y='18' width='6' height='10' rx='2' fill='%23ff2d55'/%3E%3Crect x='13' y='12' width='6' height='16' rx='2' fill='%23ff2d55'/%3E%3Cpath d='M22 4h6v6l-2-2-4 4-2-2 4-4-2-2z' fill='%23ff2d55'/%3E%3Crect x='22' y='14' width='6' height='14' rx='2' fill='%23ff2d55'/%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,35 +36,36 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
 
             <nav class="nav" id="menu">
                 <ul class="nav__list">
-                    <li><a href="./#hero" class="nav__link">Главная</a></li>
-                    <li><a href="./#strategy" class="nav__link">Стратегия</a></li>
-                    <li><a href="./#cases" class="nav__link">Кейсы</a></li>
-                    <li><a href="./#expertise" class="nav__link">Экспертиза</a></li>
-                    <li><a href="./#reviews" class="nav__link">Отзывы</a></li>
+                    <li><a href="./#hero" class="nav__link">Strona główna</a></li>
+                    <li><a href="./#strategy" class="nav__link">Strategia</a></li>
+                    <li><a href="./#cases" class="nav__link">Case studies</a></li>
+                    <li><a href="./#expertise" class="nav__link">Ekspertyza</a></li>
+                    <li><a href="./#reviews" class="nav__link">Opinie</a></li>
                 </ul>
             </nav>
 
             <a href="./#contact" class="btn-contact">
-                <span>Связаться</span>
+                <span>Kontakt</span>
                 <i class="fa-solid fa-arrow-right"></i>
             </a>
 
-            <button class="burger" id="burger" aria-label="Открыть меню">
+            <button class="burger" id="burger" aria-label="Otwórz menu">
                 <span></span>
                 <span></span>
             </button>
         </div>
     </header>
+
     <main class="legal-page">
     <section class="pages">
         <div class="container" data-aos="fade-up">
-            <span class="section-tag">Центр поддержки</span>
-            <h1>Контактная информация</h1>
+            <span class="section-tag">Centrum wsparcia</span>
+            <h1>Informacje kontaktowe</h1>
 
             <p class="lead-text">
-                Мы всегда открыты для новых проектов и профессиональных дискуссий о вашем будущем. 
-                Свяжитесь с командой <strong><?= $domainTitle ?></strong> любым удобным для вас способом. 
-                Наши эксперты в Париже готовы ответить на ваши вопросы по будням с 09:00 до 18:00 (CET).
+                Jesteśmy zawsze otwarci na nowe projekty i merytoryczne dyskusje o Twojej przyszłości zawodowej. 
+                Skontaktuj się z zespołem <strong><?= $domainTitle ?></strong> w dowolny, wygodny dla Ciebie sposób. 
+                Nasi eksperci w Warszawie są gotowi odpowiedzieć na Twoje pytania w dni robocze od 09:00 do 18:00 (CET).
             </p>
 
             <div class="contact-cards">
@@ -72,8 +73,8 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
                     <div class="contact-card__icon">
                         <i class="fas fa-envelope"></i>
                     </div>
-                    <h2>Пишите нам</h2>
-                    <p>Для общих вопросов, предложений и запросов на карьерный консалтинг:</p>
+                    <h2>Napisz do nas</h2>
+                    <p>W przypadku pytań ogólnych, propozycji i zapytań o konsulting kariery:</p>
                     <a href="mailto:support@<?= $fullDomain ?>" class="contact-link">support@<?= $fullDomain ?></a>
                 </div>
 
@@ -81,30 +82,30 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
                     <div class="contact-card__icon">
                         <i class="fas fa-phone"></i>
                     </div>
-                    <h2>Звоните</h2>
-                    <p>Прямая линия экспертной поддержки и быстрых консультаций:</p>
-                    <a href="tel:+33189480388" class="contact-link">+33 1 89 48 03 88</a>
+                    <h2>Zadzwoń</h2>
+                    <p>Bezpośrednia linia wsparcia eksperckiego i szybkich konsultacji:</p>
+                    <a href="tel:+48221052857" class="contact-link">+48 22 105 28 57</a>
                 </div>
 
                 <div class="contact-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="contact-card__icon">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
-                    <h2>Наш офис</h2>
-                    <p>Штаб-квартира <strong><?= $domainTitle ?></strong> расположена в сердце Франции:</p>
+                    <h2>Nasze biuro</h2>
+                    <p>Siedziba <strong><?= $domainTitle ?></strong> znajduje się w samym sercu Polski:</p>
                     <address class="contact-address">
-                        14 Rue de Rivoli,<br>
-                        75004 Paris,<br>
-                        France
+                        ul. Marszałkowska 126/134,<br>
+                        00-008 Warszawa,<br>
+                        Polska
                     </address>
                 </div>
             </div>
 
             <div class="contact-extra">
                 <p>
-                    ⚡ Технологии, которые работают на вас. Предложение активно только в странах ЕС. 
-                    Вы также можете воспользоваться формой обратной связи на 
-                    <a href="./#contact">главной странице</a> для мгновенной отправки запроса.
+                    ⚡ Technologie, które pracują dla Ciebie. Oferta aktywna tylko w krajach UE. 
+                    Możesz również skorzystać z formularza kontaktowego na 
+                    <a href="./#contact">stronie głównej</a>, aby błyskawicznie wysłać zapytanie.
                 </p>
             </div>
         </div>
@@ -120,22 +121,22 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
                     <span class="logo__text"><?= $domainTitle ?></span>
                 </a>
                 <p class="footer__description">
-                    Инновационные стратегии для построения карьеры, которая работает на вас. Переосмыслите свой путь вместе с экспертами <?= $domainTitle ?>.
+                    Innowacyjne strategie budowania kariery, która pracuje dla Ciebie. Przebuduj swoją ścieżkę razem z ekspertami <?= $domainTitle ?>.
                 </p>
             </div>
 
             <div class="footer__col">
-                <h4 class="footer__title">Навигация</h4>
+                <h4 class="footer__title">Nawigacja</h4>
                 <ul class="footer__links">
-                    <li><a href="./#hero">Главная</a></li>
-                    <li><a href="./#strategy">Стратегия</a></li>
-                    <li><a href="./#cases">Кейсы</a></li>
-                    <li><a href="./#expertise">Экспертиза</a></li>
+                    <li><a href="./#hero">Strona główna</a></li>
+                    <li><a href="./#strategy">Strategia</a></li>
+                    <li><a href="./#cases">Case studies</a></li>
+                    <li><a href="./#expertise">Ekspertyza</a></li>
                 </ul>
             </div>
 
             <div class="footer__col">
-                <h4 class="footer__title">Юридическая информация</h4>
+                <h4 class="footer__title">Informacje prawne</h4>
                 <ul class="footer__links">
                     <li><a href="./privacy.php">Privacy Policy</a></li>
                     <li><a href="./cookies.php">Cookie Policy</a></li>
@@ -148,11 +149,11 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
             </div>
 
             <div class="footer__col">
-                <h4 class="footer__title">Контакты</h4>
+                <h4 class="footer__title">Kontakt</h4>
                 <ul class="footer__contacts">
                     <li>
                         <i class="fa-solid fa-phone"></i>
-                        <a href="tel:+33189480388">+33 1 89 48 03 88</a>
+                        <a href="tel:+48221052857">+48 22 105 28 57</a>
                     </li>
                     <li>
                         <i class="fa-solid fa-envelope"></i>
@@ -160,7 +161,7 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
                     </li>
                     <li>
                         <i class="fa-solid fa-location-dot"></i>
-                        <span>14 Rue de Rivoli, 75004 Paris, France</span>
+                        <span>ul. Marszałkowska 126/134, Warszawa, Polska</span>
                     </li>
                 </ul>
             </div>
@@ -168,26 +169,27 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
         
         <div class="container">
             <div class="footer__bottom">
-                <p>&copy; <?= date('Y') ?> <?= $domainTitle ?>. Платформа доступна в Европе.</p>
+                <p>&copy; <?= date('Y') ?> <?= $domainTitle ?>. Platforma dostępna w Europie.</p>
             </div>
         </div>
     </footer>
+
     <div class="mobile-menu" id="mobile-menu">
         <button class="mobile-menu__close" id="menu-close">&times;</button>
         <nav class="mobile-menu__nav">
-            <a href="./#hero" class="mobile-menu__link">Главная</a>
-            <a href="./#strategy" class="mobile-menu__link">Стратегия</a>
-            <a href="./#cases" class="mobile-menu__link">Кейсы</a>
-            <a href="./#expertise" class="mobile-menu__link">Экспертиза</a>
-            <a href="./#reviews" class="mobile-menu__link">Отзывы</a>
-            <a href="./#contact" class="btn-primary">Бесплатная консультация</a>
+            <a href="./#hero" class="mobile-menu__link">Strona główna</a>
+            <a href="./#strategy" class="mobile-menu__link">Strategia</a>
+            <a href="./#cases" class="mobile-menu__link">Case studies</a>
+            <a href="./#expertise" class="mobile-menu__link">Ekspertyza</a>
+            <a href="./#reviews" class="mobile-menu__link">Opinie</a>
+            <a href="./#contact" class="btn-primary">Bezpłatna konsultacja</a>
         </nav>
     </div>
     
     <div class="cookie-popup" id="cookie-popup">
         <div class="cookie-popup__content">
-            <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.php">Cookie политике</a>.</p>
-            <button class="btn-primary btn-primary--small" id="cookie-accept">Принять</button>
+            <p>Ta strona używa plików cookies w celu poprawy działania. Dowiedz się więcej w naszej <a href="./cookies.php">Polityce Cookies</a>.</p>
+            <button class="btn-primary btn-primary--small" id="cookie-accept">Akceptuję</button>
         </div>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
